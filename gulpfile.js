@@ -1,6 +1,8 @@
 const gulp = require('gulp'),
-      stylus = require('gulp-stylus'),
-      concat = require('gulp-concat');
+stylus = require('gulp-stylus'),
+concat = require('gulp-concat'),
+browserSync = require('browser-sync').create();
+
 
 gulp.task('styles', function () {
 	return gulp.src('frontend/styles/main.styl')
@@ -9,19 +11,29 @@ gulp.task('styles', function () {
 	.pipe(gulp.dest('public'));
 });
 
+
 gulp.task('assets', function () {
 	return gulp.src('fronted/assets/**', {since: gulp.lastRun('assets')})
 	.pipe(gulp.dest('public'));
 });
 
-gulp.task('build', gulp.series('styles', 'assets')
-	);
 
+gulp.task('build', gulp.series('styles', 'assets'));
 
 
 gulp.task('watch', function () {
 	gulp.watch('frontend/styles/**/*.*', gulp.series('styles'));
-    gulp.watch('frontend/assets/**/*.*', gulp.series('assets'));
+	gulp.watch('frontend/assets/**/*.*', gulp.series('assets'));
 });
 
-gulp.task('dev', gulp.series('build', 'watch'));
+
+gulp.task('serve', function () {
+	browserSync.init({
+		server: 'public'
+	});
+	browserSync.watch('public/**/*.*').on('change', browserSync.reload);
+});
+
+
+
+gulp.task('dev', gulp.series('build', gulp.parallel('watch', 'serve')));
