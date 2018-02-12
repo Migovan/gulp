@@ -1,0 +1,9 @@
+header {
+  background-color: #f00;
+  height: 800px;
+  padding: 80;
+}
+body {
+  margin: 0;
+  padding: 500px;
+}
