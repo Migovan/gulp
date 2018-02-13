@@ -2,14 +2,19 @@ const gulp = require('gulp'),
 stylus = require('gulp-stylus'),
 concat = require('gulp-concat'),
 browserSync = require('browser-sync').create(),
-del = require('del');
+del = require('del'),
+cssnano = require('gulp-cssnano'),
+rev = require('gulp-rev');
 
 
 gulp.task('styles', function () {
 	return gulp.src('frontend/styles/main.styl')
 	.pipe(stylus())
 	// .pipe(concat('all.css'))
-	.pipe(gulp.dest('public'));
+	.pipe(cssnano())
+	// .pipe(rev())
+	// .pipe(rev.manifest('css.json'))
+	.pipe(gulp.dest('public/styles'));
 });
 
 gulp.task('clean', function () {
@@ -17,17 +22,22 @@ gulp.task('clean', function () {
 });
 
 gulp.task('assets', function () {
-	return gulp.src('./fronted/assets/**', {since: gulp.lastRun('assets')})
+	return gulp.src('./frontend/assets/**', {since: gulp.lastRun('assets')})
 	.pipe(gulp.dest('./public'));
 });
 
+gulp.task('styles:assets', function () {
+	return gulp.src('./frontend/styles/**/*.png', {since: gulp.lastRun('styles:assets')})
+	.pipe(gulp.dest('./public/styles'));
+});
 
-gulp.task('build', gulp.series('clean', gulp.parallel('styles', 'assets')));
+gulp.task('build', gulp.series('clean', 'styles:assets', 'styles', 'assets'));
 
 
 gulp.task('watch', function () {
 	gulp.watch('frontend/styles/**/*.*', gulp.series('styles'));
 	gulp.watch('frontend/assets/**/*.*', gulp.series('assets'));
+	gulp.watch('frontend/styles/**/*.png', gulp.series('styles:assets'));
 });
 
 
