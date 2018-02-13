@@ -14,5 +14,8 @@
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-stylus": "^2.7.0"
+  },
+  "dependencies": {
+    "del": "^3.0.0"
   }
 }

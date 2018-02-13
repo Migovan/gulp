@@ -1,7 +1,8 @@
 const gulp = require('gulp'),
 stylus = require('gulp-stylus'),
 concat = require('gulp-concat'),
-browserSync = require('browser-sync').create();
+browserSync = require('browser-sync').create(),
+del = require('del');
 
 
 gulp.task('styles', function () {
@@ -11,14 +12,17 @@ gulp.task('styles', function () {
 	.pipe(gulp.dest('public'));
 });
 
+gulp.task('clean', function () {
+	return del('public');
+});
 
 gulp.task('assets', function () {
-	return gulp.src('fronted/assets/**', {since: gulp.lastRun('assets')})
-	.pipe(gulp.dest('public'));
+	return gulp.src('./fronted/assets/**', {since: gulp.lastRun('assets')})
+	.pipe(gulp.dest('./public'));
 });
 
 
-gulp.task('build', gulp.series('styles', 'assets'));
+gulp.task('build', gulp.series('clean', gulp.parallel('styles', 'assets')));
 
 
 gulp.task('watch', function () {
