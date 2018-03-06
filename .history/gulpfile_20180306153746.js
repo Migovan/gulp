@@ -19,7 +19,7 @@ gulp.task('pug', function () {
 	.pipe(pug({
 	  pretty: true
 	}))
-	.pipe(gulp.dest('public'))
+	.pipe(gulp.dest('frontend/assets'))
   });
 
 gulp.task('clean', function () {
@@ -40,7 +40,7 @@ gulp.task('build', gulp.series('clean', 'styles:assets', 'styles', 'pug', 'asset
 
 
 gulp.task('watch', function () {
-	gulp.watch('frontend/assets/**/*.pug', gulp.series('pug'));
+	gulp.watch('frontend/assets/**/*.*', gulp.series('pug'));
 	gulp.watch('frontend/styles/**/*.*', gulp.series('styles'));
 	gulp.watch('frontend/assets/**/*.*', gulp.series('assets'));
 	gulp.watch('frontend/styles/**/*.png', gulp.series('styles:assets'));

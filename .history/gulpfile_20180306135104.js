@@ -3,8 +3,7 @@ const gulp = require('gulp'),
 	  browserSync = require('browser-sync').create(),
    	  del = require('del'),
 	  rev = require('gulp-rev'),
-	  pug = require('gulp-pug'),
-	  cssnano = require('gulp-cssnano');
+	  pug = require('gulp-pug');
 
 
 gulp.task('styles', function () {
@@ -17,9 +16,8 @@ gulp.task('styles', function () {
 gulp.task('pug', function () {
 	return gulp.src('frontend/assets/*.pug')
 	.pipe(pug({
-	  pretty: true
+	  // Your options in here. 
 	}))
-	.pipe(gulp.dest('public'))
   });
 
 gulp.task('clean', function () {
@@ -36,11 +34,10 @@ gulp.task('styles:assets', function () {
 	.pipe(gulp.dest('./public/styles'));
 });
 
-gulp.task('build', gulp.series('clean', 'styles:assets', 'styles', 'pug', 'assets'));
+gulp.task('build', gulp.series('clean', 'styles:assets', 'styles', 'assets'));
 
 
 gulp.task('watch', function () {
-	gulp.watch('frontend/assets/**/*.pug', gulp.series('pug'));
 	gulp.watch('frontend/styles/**/*.*', gulp.series('styles'));
 	gulp.watch('frontend/assets/**/*.*', gulp.series('assets'));
 	gulp.watch('frontend/styles/**/*.png', gulp.series('styles:assets'));

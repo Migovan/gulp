@@ -19,7 +19,7 @@ gulp.task('pug', function () {
 	.pipe(pug({
 	  pretty: true
 	}))
-	.pipe(gulp.dest('public'))
+	.pipe(gulp.dest('frontend/assets'))
   });
 
 gulp.task('clean', function () {

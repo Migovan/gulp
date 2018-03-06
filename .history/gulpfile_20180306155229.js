@@ -27,7 +27,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('assets', function () {
-	return gulp.src('./frontend/assets/**', {since: gulp.lastRun('assets')})
+	return gulp.src('./frontend/assets/index.html', {since: gulp.lastRun('assets')})
 	.pipe(gulp.dest('./public'));
 });
 
