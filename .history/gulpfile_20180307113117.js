@@ -43,7 +43,7 @@ gulp.task('watch', function () {
 	gulp.watch('frontend/assets/**/*.pug', gulp.series('pug'));
 	gulp.watch('frontend/styles/**/*.*', gulp.series('styles'));
 	gulp.watch('frontend/assets/**/*.*', gulp.series('assets'));
-	gulp.watch('frontend/styles/img/**/*.*', gulp.series('styles:assets'));
+	gulp.watch('frontend/styles/**/*.*', gulp.series('styles:assets'));
 });
 
 
