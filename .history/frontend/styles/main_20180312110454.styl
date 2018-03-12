@@ -5,8 +5,8 @@ body
 	padding 0
 	font-size 16px
 
-header
-	max-width 1258px
+.header
+	width 70%
 	height 285px	
 	display flex
 	flex-direction row
@@ -22,16 +22,16 @@ header
 	margin-left 160px
 	margin-top -15px
 	color #7b7b7b
-	font-family 'PT Sans' sans-serif
-	font-size 1em
+	font-family PTSans, sans-serif		
+	font-size 1em		
 
 .header__content_right
 	margin-top -17px
 
 .header__number
 	font-family 'PT Sans' sans-serif
-	font-weight bold
 	font-size 1.625em
+	// font-weight bold
 	margin-bottom 12px
 
 .header__button	
@@ -45,7 +45,7 @@ header
 .main-content
 	margin-left auto
 	margin-right auto 
-	max-width 1440px
+	width 75.5%
 	h1 
 		font-family 'Oswald' sans-serif
 		font-size 70px
@@ -55,6 +55,8 @@ header
 		color #ffffff
 
 .main-content__big-image	
+	max-width 1440px
+	height 1104px
 	position absolute
 
 .main-content__mask-big
@@ -118,23 +120,3 @@ header
 	height 700px
 	background #ffffff
 	position relative
-
-.information__statistic
-	display flex
-	flex-direction row
-	justify-content space-between
-	align-items center
-	width 823px
-	margin auto
-
-.information__number
-	font-family 'Oswald' sans-serif
-	font-size 7.5em
-	font-weight 200
-	line-height 0.48
-	margin-bottom 55px
-
-.information__text	
-	font-family 'PT Sans' sans-serif
-	font-size 1.0625em
-	line-height 1.47
