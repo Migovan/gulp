@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="74px" height="63px" viewBox="0 0 74 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>svyaz</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="60.0465745%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9523AE" offset="0%"></stop>
+            <stop stop-color="#0080FF" offset="25.1328125%"></stop>
+            <stop stop-color="#C96DD8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="60.0465745%" y1="0%" x2="60.0465775%" y2="339.276596%" id="linearGradient-2">
+            <stop stop-color="#9523AE" offset="0%"></stop>
+            <stop stop-color="#0080FF" offset="25.1328125%"></stop>
+            <stop stop-color="#C96DD8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0654519%" y1="-236.3077%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#9523AE" offset="0%"></stop>
+            <stop stop-color="#0080FF" offset="25.1328125%"></stop>
+            <stop stop-color="#C96DD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Competentions" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1" transform="translate(-56.000000, -307.000000)">
+            <g id="svyaz" transform="translate(56.000000, 307.000000)">
+                <path d="M3,3 L3,16.4727273 L10.6615385,16.4727273 L10.6615385,3 L3,3 Z M0,0 L13.6615385,0 L13.6615385,19.4727273 L0,19.4727273 L0,0 Z M63.3384615,16.4727273 L71,16.4727273 L71,3 L63.3384615,3 L63.3384615,16.4727273 Z M60.3384615,0 L74,0 L74,19.4727273 L60.3384615,19.4727273 L60.3384615,0 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                <path d="M11.5923077,11.2363636 L62.5295151,11.2363636 L62.5295151,8.23636364 L11.5923077,8.23636364 L11.5923077,11.2363636 Z M11.5923077,54.7636364 L62.5295151,54.7636364 L62.5295151,51.7636364 L11.5923077,51.7636364 L11.5923077,54.7636364 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+                <path d="M13.6615385,60 L10.6615385,63 L10.6615385,60 L13.6615385,60 Z M3,60 L10.6615385,60 L10.6615385,46.5272727 L3,46.5272727 L3,60 Z M0,43.5272727 L13.6615385,43.5272727 L13.6615385,63 L0,63 L0,43.5272727 Z M63.3384615,60 L71,60 L71,46.5272727 L63.3384615,46.5272727 L63.3384615,60 Z M60.3384615,43.5272727 L74,43.5272727 L74,63 L60.3384615,63 L60.3384615,43.5272727 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
