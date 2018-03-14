@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="157px" viewBox="0 0 320 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="58.0619352%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#0080FF" offset="48.9038584%"></stop>
+            <stop stop-color="#C96DD8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Mobile's" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.775886194">
+        <g id="ml_zastroy_m" transform="translate(0.000000, -605.000000)" fill="url(#linearGradient-1)">
+            <polygon id="Rectangle-1" points="-544 728.078125 896 523 896 762 -544 762"></polygon>
+        </g>
+    </g>
+</svg>
