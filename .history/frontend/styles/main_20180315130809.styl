@@ -4,7 +4,6 @@ body
 	margin 0
 	padding 0
 	font-size 16px
-	min-width 320px
 
 @media screen and (min-width: 980px)
 	header
@@ -21,9 +20,6 @@ body
 			height: 120px
 	.header-mobile
 		display none
-
-	.business-with-miralogic__mobile
-		display none	
 
 .header__info
 	margin-left 160px
@@ -85,15 +81,6 @@ body
 	.main-content__right_mobile
 		display none
 
-	.information__main-text-second-mobile
-		display none 	
-
-	.information__br
-		display none	
-
-	.service__mobile
-		display none	
-
 .main-content__right
 	background-color #ffc800
 	width 223px
@@ -132,9 +119,10 @@ body
 
 .information
 	max-width 985px
+	height 2087px
 	margin auto
 	background #ffffff
-	height 2087px
+	position relative
 
 .information__statistic
 	display flex
@@ -211,11 +199,17 @@ body
 	height 456px
 	justify-content center
 
+// .information__image-maintain
+// 	width 985px	
+// 	position absolute
+
 .information__image-maintain
 	background-image url(./img/maintain.png)
 	background-repeat no-repeat
 	background-position bottom 
 	max-width 985px
+	height 260px
+	
 
 .information__main-text-second
 	height 456.45px
@@ -248,7 +242,7 @@ body
 		line-height 1.47
 		cursor pointer
 	span
-		color #ffffff	
+		color #ffffff
 	
 .information__result	
 	display flex
@@ -257,7 +251,7 @@ body
 	align-items center
 	height 456px
 	background #f6f6ee
-	// position absolute
+	position absolute
 	width 100%
 
 .information__arrow-percentages
@@ -265,6 +259,7 @@ body
 	flex-direction row
 	justify-content space-between
 	align-items baseline
+	width 21%
 	img 
 		width 44px
 		height 32px
@@ -294,13 +289,14 @@ body
 		margin 0
 
 .business-with-miralogic
-	// width 1160px
+	width 1160px
 	margin auto
 	margin-top 47px
 	display flex
 	flex-direction column
 	justify-content space-around
 	align-items center
+	height 530px
 	h2
 		font-family 'Oswald' sans-serif
 		font-size 3.25em
@@ -309,7 +305,7 @@ body
 		line-height 1.1
 	button
 		width 364px
-		padding 10px
+		height 50px
 		border-radius 5px
 		border solid 1px #8a73e3
 		background white
@@ -319,18 +315,12 @@ body
 		font-weight bold
 		cursor pointer
 
-.business-with-miralogic__image
-	width: 100%;
-	overflow: hidden;
-	text-align: center;
-	margin-top 50px;
-
 .business-with-miralogic__logo-mini
 	width 118px
 	height 61px	
 
 .service
-	width 52%
+	width 985px
 	margin auto
 	margin-top 50px
 	display flex
@@ -351,6 +341,7 @@ footer
 	display flex
 	flex-direction column
 	align-items center
+	width 985px
 	margin auto
 	div
 		display flex
