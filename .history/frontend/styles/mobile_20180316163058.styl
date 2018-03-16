@@ -1,9 +1,9 @@
 @media screen and (max-width: 980px)
-	body .header-mobile
+	.header-mobile
 		background-color #47485f
 		height 60px
 		min-width 320px
-		display block
+		visibility visible
 		.header-mobile__menu
 			width 25px
 			height 15px
@@ -21,10 +21,8 @@
 			justify-content space-between
 			align-items center
 			margin auto
-
 	body header
 		display none
-		
 	.main-content
 		margin-left auto
 		margin-right auto 
@@ -35,7 +33,7 @@
 		background-position bottom 
 		position relative
 
-	 .main-content .main-content__text-container__header
+	.main-content__text-container__header
 		font-family 'Oswald' sans-serif
 		font-size 2.5em
 		font-weight 300
@@ -51,13 +49,13 @@
 		flex-direction column
 		position absolute
 		left 15.8%
-		top 890px
+		top 850px
 
 	.main-content .main-content__post
 		font-size 1.0625em
 		font-weight bold
 
-	.information .main-content__right_mobile
+	.main-content__right_mobile
 		margin auto
 		margin-top 35px
 		background-color #ffc800
@@ -66,7 +64,6 @@
 		color #814514
 		text-align end
 		margin-bottom 40px
-		display block
 		h2
 			font-family sans
 			font-size 1.5em
@@ -158,27 +155,18 @@
 		font-size 1.0625em
 		font-style normal
 		margin 32px
-		display block
 
 	.business-with-miralogic__logo-mini
 		width 118px
 		height 61px
 
-	body .service
-		flex-direction column
-		width 100%
-		.service__paragraph
-			display none
-			padding 0 25px	
-		.service__caption
-			padding 0 25px	
-		.service__paragraph_open	
-			display block 
-		.service_block
-			border-top 2px solid #e8e8e8
-			&:last-child 
-				border-bottom 2px solid #e8e8e8
+	.service__mobile
+		p
+			margin 18px 8%
+			cursor pointer
 
+	body .service
+		display none
 
 
 
