@@ -6,24 +6,24 @@ body
 	font-size 16px
 	min-width 320px
 
-// @media screen and (min-width: 980px)
-header
-	width 65%
-	height 285px	
-	display flex
-	flex-direction row
-	justify-content space-between
-	align-items: center;
-	margin-left auto
-	margin-right auto 
-	img 
-		width: 318px
-		height: 120px
-.header-mobile
-	display none
+@media screen and (min-width: 980px)
+	header
+		width 65%
+		height 285px	
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items: center;
+		margin-left auto
+		margin-right auto 
+		img 
+			width: 318px
+			height: 120px
+	.header-mobile
+		display none
 
-.business-with-miralogic__mobile
-	display none	
+	.business-with-miralogic__mobile
+		display none	
 
 .header__info
 	margin-left 160px
@@ -50,7 +50,8 @@ header
 	color #3e7af3
 	cursor pointer
 
-.main-content
+@media screen and (max-width: 981px)
+	.main-content
 		margin-left auto
 		margin-right auto 
 		max-width 1440px
@@ -59,56 +60,53 @@ header
 		background-repeat no-repeat
 		background-position bottom 
 		position relative
+	.main-content__text-container__header
+		font-family 'Oswald' sans-serif
+		font-size 4.375em
+		font-weight 300
+		font-style italic
+		line-height 1.09
+		color #ffffff
 
-// @media screen and (min-width: 980px)
-	
-.main-content__text-container__header
-	font-family 'Oswald' sans-serif
-	font-size 4.375em
-	font-weight 300
-	font-style italic
-	line-height 1.09
-	color #ffffff
+		.main-content__text_mobile
+			display none
 
-.main-content__text_mobile
-	display none
+	.main-content__text
+		width 100%
+		position absolute
+		top 805px
+		display flex
+		justify-content center
+		flex-direction column
 
-.main-content__text
-	width 100%
-	position absolute
-	top 805px
-	display flex
-	justify-content center
-	flex-direction column
-
-.main-content__text_white-block
-	background #fff
-	width 100%
-	height 60px
-	max-width 985px
-	margin 0 auto
+	.main-content__text_white-block
+		background #fff
+		width 100%
+		height 60px
+		max-width 985px
+		margin 0 auto
 
 
-.main-content__text-container
-	display flex
-	flex-direction row
-	justify-content space-between
-	align-items center
-	max-width 985px
-	width 100%
-	margin 60px auto 30px
+	.main-content__text-container
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		max-width 985px
+		width 100%
+		margin 60px auto 30px
 
-.main-content__right_mobile
-	display none
+	.main-content__right_mobile
+		display none
 
-.information__main-text-second-mobile
-	display none 	
+	.information__main-text-second-mobile
+		display none 	
 
-.information__br
-	display none	
+	.information__br
+		display none	
 
-.service__mobile
-	display none	
+	.service__mobile
+		display none	
 
 .main-content__text-container__right
 	background-color #ffc800
