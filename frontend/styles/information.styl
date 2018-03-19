@@ -19,7 +19,7 @@
 	font-family 'Oswald' sans-serif
 	font-size 7.5em
 	font-weight 200
-	line-height 0.48
+	line-height .48
 	margin-bottom 55px
 
 .information__text	
@@ -64,23 +64,32 @@
 				font-size 1.0625em
 
 .information__paragraph
-	margin-top 50px
-	margin-bottom -20px
+	margin 50px 0 -20px 0
 
 .information__border-left
-	border-top solid 0.5px
+	border-top solid .5px
 	border-right solid 
 	border-color #e8e8e8
 	width 50%
 	height 456px
 	justify-content center
+	img 
+		transition all .25s ease-out
+		cursor pointer
+		&:hover 
+			transform scale(1.5)
 
 .information__border-right
-	border-top solid 0.5px
+	border-top solid .5px
 	border-color #e8e8e8
 	width 50%
 	height 456px
 	justify-content center
+	img 
+		transition all .25s ease-out
+		cursor pointer
+		&:hover 
+			transform scale(1.5)
 
 .information__image-maintain
 	background-image url(./img/maintain.png)
