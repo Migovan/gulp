@@ -1,0 +1,364 @@
+@import 'mobile.styl'
+
+body 
+	margin 0
+	padding 0
+	font-size 16px
+
+@media screen and (min-width: 980px)
+	header
+		max-width 1258px
+		height 285px	
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items: center;
+		margin-left auto
+		margin-right auto 
+		img 
+			width: 318px
+			height: 120px
+	.header-mobile
+		display none
+
+.header__info
+	margin-left 160px
+	margin-top -15px
+	color #7b7b7b
+	font-family 'PT Sans' sans-serif
+	font-size 1em
+
+.header__content_right
+	margin-top -17px
+
+.header__number
+	font-family 'PT Sans' sans-serif
+	font-weight bold
+	font-size 1.625em
+	margin-bottom 12px
+
+.header__button	
+	width 140px
+	height 40px
+	border solid 1px
+	border-radius 5px
+	background white
+	color #3e7af3
+	cursor pointer
+
+@media screen and (min-width: 980px)
+	.main-content
+		margin-left auto
+		margin-right auto 
+		max-width 1440px
+		height 1104px
+		background-image url(./img/mask-big.png), url(./img/big-image.png)
+		background-repeat no-repeat
+		background-position bottom 
+		position relative
+		h1 
+			font-family 'Oswald' sans-serif
+			font-size 4.375em
+			font-weight 300
+			font-style italic
+			line-height 1.09
+			color #ffffff
+
+		.main-content__text_mobile
+			display none
+
+	.main-content__text
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items center
+		width 68.5%
+		margin auto
+		position absolute
+		left 15.8%
+		top 825px
+
+	.main-content__right_mobile
+		display none
+
+.main-content__right
+	background-color #ffc800
+	width 223px
+	height 64px
+	color #814514
+	text-align end
+	h2
+		font-family sans
+		font-size 1.5em
+		margin-right 10px
+		margin-top 12px
+		
+.main-content__cafe
+	font-size 0.7em
+	font-weight bold
+	margin-right: 10px;
+	position relative
+	top 15px	
+
+.main-content__name
+	font-size 1.0625em
+	font-family 'PT Sans' sans-serif
+	font-weight bold
+	color #ffffff
+	margin-bottom: -12px;
+
+.main-content__post
+	font-size 0.9em
+	font-family 'PT Sans' sans-serif
+	color #ffffff
+		
+.container
+	max-width 1440px
+	margin auto
+	background #e8e8e8
+
+.information
+	max-width 985px
+	height 2087px
+	margin auto
+	background #ffffff
+	position relative
+
+.information__statistic
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	width 823px
+	margin auto
+
+.information__number
+	font-family 'Oswald' sans-serif
+	font-size 7.5em
+	font-weight 200
+	line-height 0.48
+	margin-bottom 55px
+
+.information__text	
+	font-family 'PT Sans' sans-serif
+	font-size 1.0625em
+	line-height 1.47
+
+.information__map
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	margin auto
+	min-height 500px
+	width 984px
+
+.information__main-text
+	margin-left 8%
+	p
+		font-family 'Oswald' sans-serif
+		font-size 2.625em
+		font-weight 300
+		font-style italic
+	article
+		font-family 'PT Sans' sans-serif
+		font-size 1.0625em
+		line-height 1.47
+
+.information__communications-dns
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items center
+	margin auto
+	div
+		display flex
+		flex-direction column
+		align-items center
+		div
+			p
+				font-family 'PT Sans' sans-serif
+				font-size 1.0625em
+
+.information__paragraph
+	margin-top 50px
+	margin-bottom -20px
+
+.information__border-left
+	border-top solid 0.5px
+	border-right solid 
+	border-color #e8e8e8
+	width 50%
+	height 456px
+	justify-content center
+
+.information__border-right
+	border-top solid 0.5px
+	border-color #e8e8e8
+	width 50%
+	height 456px
+	justify-content center
+
+.information__image-maintain
+	background-image url(./img/maintain.png)
+	background-repeat no-repeat
+	background-position bottom 
+	max-width 985px
+
+.information__main-text-second
+	height 456.45px
+	width 90%
+	margin auto
+	display flex
+	flex-direction column
+	justify-content space-around
+	p
+		font-family 'Oswald' sans-serif
+		font-size 2em
+		font-weight 300
+		font-style italic
+		line-height 1.78
+		color  #ffffff
+	article
+		font-family 'PT Sans' sans-serif
+		font-size 1.0625em
+		color #ffffff
+		line-height 1.47
+		width 47%
+	button
+		background-color transparent
+		width 117px
+		height 30px
+		border-radius 3px
+		border solid 1px rgba(255, 255, 255, 0.28);
+		font-family 'PT Sans' sans-serif
+		font-size 1.0625em
+		line-height 1.47
+		cursor pointer
+	span
+		color #ffffff
+	
+.information__result	
+	display flex
+	flex-direction column
+	justify-content space-around
+	align-items center
+	height 456px
+	background #f6f6ee
+	position absolute
+	width 100%
+
+.information__arrow-percentages
+	display flex
+	flex-direction row
+	justify-content space-between
+	align-items baseline
+	width 21%
+	img 
+		width 44px
+		height 32px
+
+.information__one-word
+	font-family 'PT Sans' sans-serif
+	font-size 1.0625em
+	color rgba(0, 0, 0, 0.64)
+
+.information__percentages
+	font-family 'Oswald' sans-serif
+	font-size 7.5em
+	font-weight 200
+	line-height 0.48
+	margin 0
+
+.information__two-paragraphs
+	font-family 'Oswald' sans-serif
+	font-size 2.625em
+	font-weight 300
+	font-style italic
+	display flex
+	flex-direction column
+	align-items center
+	margin-bottom 30px
+	p
+		margin 0
+
+.business-with-miralogic
+	width 1160px
+	margin auto
+	margin-top 47px
+	display flex
+	flex-direction column
+	justify-content space-around
+	align-items center
+	height 530px
+	h2
+		font-family 'Oswald' sans-serif
+		font-size 3.25em
+		font-weight 300
+		font-style italic
+		line-height 1.1
+	button
+		width 364px
+		height 50px
+		border-radius 5px
+		border solid 1px #8a73e3
+		background white
+		font-family 'Oswald' sans-serif
+		font-size 1.375em
+		color #766fce
+		font-weight bold
+		cursor pointer
+
+.business-with-miralogic__logo-mini
+	width 118px
+	height 61px	
+
+.service
+	width 985px
+	margin auto
+	margin-top 50px
+	display flex
+	flex-direction row
+	justify-content space-between
+
+.service__caption
+	font-family 'PT Sans' sans-serif
+	font-size 1.0625em
+	font-weight bold
+
+.service__paragraph	
+	font-family 'PT Sans' sans-serif
+	font-size 1.0625em
+	line-height 1.76
+
+footer
+	display flex
+	flex-direction column
+	align-items center
+	width 985px
+	margin auto
+	div
+		display flex
+		flex-direction column
+		align-items center
+
+.footer__number
+	font-family 'PT Sans' sans-serif
+	font-size 2.25em
+	font-weight bold	
+
+.footer__basement
+	font-family 'PT Sans' sans-serif
+	font-size 0.875em	
+	color #9a9a9a
+	margin-top -12px
+
+
+.footer__basement-second
+	font-family 'PT Sans' sans-serif
+	font-size 0.875em	
+	color #9a9a9a	
+	margin-top -12px
+	margin-bottom 157px
+
+
